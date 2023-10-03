@@ -50,6 +50,8 @@ Greatest Increase in Profits: Aug-16 ($1862002)
 Greatest Decrease in Profits: Feb-14 ($-1825558)
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
+
+
 PyPoll Instructions
 In this Challenge, you are tasked with helping a small, rural town modernize its vote-counting process.
 
@@ -67,6 +69,8 @@ The winner of the election based on popular vote
 
 Your analysis should align with the following results:
 
+
+
 Election Results
 -------------------------
 Total Votes: 369711
@@ -77,6 +81,7 @@ Raymon Anthony Doane: 3.139% (11606)
 -------------------------
 Winner: Diana DeGette
 -------------------------
+
 In addition, your final script should both print the analysis to the terminal and export a text file with the results.
 
 Hints and Considerations
