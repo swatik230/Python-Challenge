@@ -11,7 +11,7 @@ decrease = 0
 initial = 1
 final_val = 0
 
-# Read the file, row by row
+# Read the file, row by row 
 with open(csvpath, newline='') as csvfile:
     # CSV reader specifies delimiter and variable that holds contents
     csvreader = csv.reader(csvfile, delimiter=',')
