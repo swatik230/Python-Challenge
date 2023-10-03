@@ -6,7 +6,7 @@ import csv
 
 PyPollcsv = os.path.join("D:/MSU DATA/Module3_Challenge/Starter_Code/Starter_Code/PyPoll/Resources", "election_data.csv")
 
-# Create the lists to store data. Initialize
+# Create the lists to store data. Initialize 
 
 count = 0
 candidatelist = []
