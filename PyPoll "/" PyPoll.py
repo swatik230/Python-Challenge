@@ -2,11 +2,11 @@
 import os
 import csv
 
-# Objective 2: Set the path for the CSV file in PyPollcsv
+#Set the path for the CSV file in PyPollcsv
 
 PyPollcsv = os.path.join("D:/MSU DATA/Module3_Challenge/Starter_Code/Starter_Code/PyPoll/Resources", "election_data.csv")
 
-# Objective 3: Create the lists to store data. Initialize
+# Create the lists to store data. Initialize
 
 count = 0
 candidatelist = []
