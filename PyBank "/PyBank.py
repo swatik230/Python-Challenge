@@ -11,12 +11,12 @@ decrease = 0
 initial = 1
 final_val = 0
 
-# Read the file, row by row 
+# Read the file, row by row
 with open(csvpath, newline='') as csvfile:
     # CSV reader specifies delimiter and variable that holds contents
     csvreader = csv.reader(csvfile, delimiter=',')
 
-    # Read the header row first 
+    # Read the header row first
     csv_header = next(csvreader)
 
     # Read each row of data after the header
@@ -24,9 +24,9 @@ with open(csvpath, newline='') as csvfile:
         net_total = net_total + int(row[1])
         count += 1
         initial_val = int(row[1])
-        '''
-        Checks the max increase and the min decrease. 
-        '''
+
+       # Checks the max increase and the min decrease.
+
         if (increase > (final_val - initial_val)):
             increase = final_val - initial_val
             mincrease = row[0]
@@ -45,20 +45,20 @@ with open(csvpath, newline='') as csvfile:
 
     file1 = open('D:/MSU DATA/Module3_Challenge/Starter_Code/Starter_Code/PyBank/Resources/budget_data.csv', 'w+')
     file1.write("\t \t Financial Analysis\n")
-    file1.write("=" * 80)
+    file1.write("---------------------------------------------------")
     file1.write("\nTotal of number of months analyzed: %s" % (count))
     file1.write("\nNet total amount: %1.1f" % (net_total))
     file1.write("\nAverage: %1.2f" % (average))
     file1.write("\nGreatest increase in profits: %1.1f, from the month of %s" % (-increase, mincrease))
     file1.write("\nGreatest decrease in losses: %1.1f, from the month of %s\n" % (-decrease, mdecrease))
-    file1.write("=" * 80)
+    file1.write("---------------------------------------------------")
     file1.close()
 
     print("\t \t Financial Analysis")
-    print("-" * 80)
+    print("-------------------------------------------------")
     print("Total of number of months analyzed: %s" % (count))
     print("Net total amount: %1.1f" % (net_total))
     print("Average: %1.2f" % (average))
     print("Greatest increase in profits: %1.1f, from the month of %s" % (increase, mincrease))
     print("Greatest decrease in losses: %1.1f, from the month of %s" % (decrease, mdecrease))
-    print("-" * 80)
+    print("--------------------------------------------------")
