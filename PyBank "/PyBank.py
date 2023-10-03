@@ -52,7 +52,7 @@ with open(csvpath, newline='') as csvfile:
     file1.write("\nGreatest increase in profits: %1.1f, from the month of %s" % (-increase, mincrease))
     file1.write("\nGreatest decrease in losses: %1.1f, from the month of %s\n" % (-decrease, mdecrease))
     file1.write("---------------------------------------------------")
-    file1.close()
+    file1.close() 
 
     print("\t \t Financial Analysis")
     print("-------------------------------------------------")
